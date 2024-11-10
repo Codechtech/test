@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+  <link href="./output.css" rel="stylesheet">
+  <title>CODECH || Tech Solutions</title>
+</head>
+<body>
+  <!--Header-->  
+  <header id="navbar" class="bg-back-blue fixed w-full top-0 left-0 z-50">
+    <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div><img src="./images/logo-whiteText.svg" alt="" width="200px" height="175px"></div>
+
+        <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-back-blue/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+            <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                <li>
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="absolute bottom-0 -right-5 rotate-12 opacity-90 lg:hidden">
+                <img src="./images/code-symbol.svg" alt="coding symbol" class="w-32">
+            </div>
+            <div class="absolute -top-5 -left-5 rotate-45 opacity-90 lg:hidden">
+                <img src="./images/sap-logo.svg" alt="sap logo" class="w-32">
+            </div>
+        </div>
+
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+            <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+    </nav>
+  </header>
+
+    <main> 
+        <!--Home-->
+        <section id="home" class="relative">
+            <div class="container">
+                <div class="w-64 h-64 bg-second-bg rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                </div>
+
+                <div class="w-64 h-64 bg-second-bg rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
+                </div>
+
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!--content-->
+                    <div class="w-full space-y-5 lg:w-1/2">
+                        <h1>
+                            From <span class="text-skiey-blue">Theory to Reality:</span>
+                            <br>
+                            <span class="text-skiey-blue"> Your Coding Journey Starts Here.</span> 
+                        </h1>
+                        <p class="text-slate-200 font-Poppins">Become job-ready with our comprehensive programming courses. Master core programming concepts and apply them to real-world projects. Our expert-led courses and hands-on exercises will equip you with the skills to excel in the tech industry.</p>
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <button class="btn">
+                                <span>Explore courses</span>
+                                <i class="ri-terminal-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--image-->
+                    <div class="w-full relative lg:w-1/2">
+                        <img src="./images/home.png" alt="home_image">
+                        <div class="absolute -top-10 right-0 opacity-30 animate-movingY">
+                            <i class="ri-terminal-window-line text-6xl text-llblue"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 opacity-30 animate-rotating">
+                            <i class="ri-braces-fill text-6xl text-llblue"></i>
+                        </div>
+                        <div class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scalingUp">
+                            <i class="ri-code-box-fill text-6xl text-llblue"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
