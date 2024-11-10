@@ -808,18 +808,26 @@ video {
   border-radius: 9999px;
 }
 
-.bg-back-blue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 39 77 / var(--tw-bg-opacity));
-}
-
 .bg-back-blue\/80{
   background-color: rgb(37 39 77 / 0.8);
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-second-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(70 72 102 / var(--tw-bg-opacity));
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pr-10{
+  padding-right: 2.5rem;
 }
 
 .font-Poppins{
@@ -841,14 +849,19 @@ video {
   color: rgb(175 221 229 / var(--tw-text-opacity));
 }
 
-.text-skiey-blue{
+.text-red-500{
   --tw-text-opacity: 1;
-  color: rgb(46 156 202 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-slate-200{
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.text-vere-blue{
+  --tw-text-opacity: 1;
+  color: rgb(41 100 138 / var(--tw-text-opacity));
 }
 
 .opacity-30{
@@ -879,8 +892,11 @@ video {
 }
 
 body{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(37 39 77 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   font-family: Jost, sans-serif;
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
@@ -928,7 +944,7 @@ h1{
 
 .nav-link:hover{
   --tw-text-opacity: 1;
-  color: rgb(41 100 138 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .btn{
