@@ -11,7 +11,7 @@
 <body>
   <!--Header-->  
   <header id="navbar" class="bg-black fixed w-full top-0 left-0 z-50">
-    <nav class="pl-5 pr-10 flex items-center justify-between h-16 sm:h-20">
+    <nav class="pl-3 pr-10 flex items-center justify-between h-16 sm:h-20">
         <div><img src="./images/logo.svg" alt="" width="150px" height="150px"></div>
 
         <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-back-blue/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
@@ -58,14 +58,14 @@
                     <!--content-->
                     <div class="w-full space-y-5 lg:w-1/2">
                         <h1>
-                            From <span class="text-red-500">Theory to Reality:</span>
+                            From <span class="">Theory to Reality:</span>
                             <br>
-                            <span class="text-vere-blue"> Your Coding Journey Starts Here.</span> 
+                            <span class="text-sky-400"> Your <span class="text-yellow-500">Coding <i class="ri-code-block"></i></span> Journey Starts Here.</span> 
                         </h1>
                         <p class="text-slate-200 font-Poppins">Become job-ready with our comprehensive programming courses. Master core programming concepts and apply them to real-world projects. Our expert-led courses and hands-on exercises will equip you with the skills to excel in the tech industry.</p>
                         <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
                             <button class="btn">
-                                <span>Explore courses</span>
+                                <a href="#courses"><span>Explore courses</span></a>
                                 <i class="ri-terminal-fill"></i>
                             </button>
                         </div>
@@ -87,6 +87,174 @@
                 </div>
             </div>
         </section>
+
+        <!--why choose us?-->
+        <div class="bg-white text-black py-20" id="about">
+            <div class="container flex flex-col items-center pb-5 gap-2 text-center">
+                <h2 class="font-bold text-words-red title">Why Choose Us?</h2>
+                <p class="font-Poppins">Learn from experienced professionals and advance your career in IT Industry.</p>
+            </div>
+            <!--Cards-->
+            <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="border border-words-red p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-presentation-fill text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Expert<br>
+                            Instructors
+                        </p>
+                    </div>
+                    <p class="font-Poppins">Learn from certified professionals with years of industry experience.</p>
+                </div>
+            
+
+            
+                <div class="border border-words-red p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-macbook-fill text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Hands-on<br>
+                            Training
+                        </p>
+                    </div>
+                    <p class="font-Poppins">Practice with real-world projects and gain practical experience.</p>
+                </div>
+            
+
+            
+                <div class="border border-words-red p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-medal-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Job<br>
+                            Ready
+                        </p>
+                    </div>
+                    <p class="font-Poppins">Get prepared for real-world IT roles.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Courses-->
+        <div id="courses" class="py-20 bg-gray-900">
+            <div class="flex flex-col items-center pb-5 gap-2 text-center">
+                <h2 class="font-bold text-yellow-500 title">Featured Courses</h2>
+                <p class="font-Poppins">Start your journey with our comprehensive programming courses.</p>
+            </div>
+
+            <!--Cards-->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-12">
+
+                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+
+                    <div class="p-4 img-info">
+
+                        <img src="./images/sap_course.jpg" alt="sap-course" width="400px" height="400px" class="rounded-2xl">
+        
+                        <h2 class="text-xl font-semibold text-black text-center pt-4">SAP ABAP</h2>
+        
+                        <p class="text-gray-600">Gain in-demand SAP ABAP Programming skills and open doors to exciting career opportunities.</p>
+        
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">Know More</button>
+        
+                    </div>
+        
+                    <div class="hidden p-4 bg-black lg:w-11/12 relative">
+                        
+                        <p class="text-xl font-bold font-Poppins pb-4 ">This course includes:</p>
+                        <ul class="flex flex-col gap-4">
+                            <li class="text-lg"><i class="ri-live-fill text-sky-500 font-bold"></i> <span class="text-sky-400 font-bold">Live, Interactive Sessions:</span>
+                                Daily 1-hour sessions, Monday to Friday for 3 months.</li>
+                            <li class="text-lg"><i class="ri-code-box-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">Master Modern ABAP:</span>
+                                Learn the latest ABAP syntax and programming syntax.</li>
+                            <li class="text-lg"><i class="ri-server-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">SAP ABAP Server Access:</span>
+                                Practice on a dedicated SAP ABAP server (included in course fees).</li>
+                            <li class="text-lg"><i class="ri-archive-stack-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">Regular Mini Projects:</span>
+                                Bi-weekly hands-on projects to reinforce learning.</li>
+                            <li class="text-lg"><i class="ri-briefcase-2-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">Major End-of-Course Project:</span>
+                                Culminate your learning with a comprehensive project</li>
+                        </ul>
+                        <p class="text-md pt-5 font-Rubik font-bold">Download the brochure.</p>
+                        <a href="./files/SAP ABAP course|| Codech.pdf" target="_blank" download="">
+                            <button class="download-btn pixel-corners absolute right-5 bottom-5">
+                                <div class="button-content">
+                                <div class="svg-container">
+                                    <svg
+                                    class="download-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    >
+                                    <path
+                                        d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"
+                                    ></path>
+                                    </svg>
+                                </div>
+                                <div class="text-container">
+                                    <div class="text">Download</div>
+                                </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+        
+                </div>
+        
+                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+
+                    <div class="p-4 img-info">
+
+                        <img src="./images/coming.jpeg" alt="sap-course" width="400px" height="400px" class="rounded-2xl blur-md">
+        
+                        <h2 class="text-xl font-semibold text-black text-center pt-4">Coming Soon</h2>
+        
+                        <p class="text-gray-600">More details coming soon.</p>
+        
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">Know More</button>
+        
+                    </div>
+        
+                    <div class="hidden p-4 bg-black lg:w-11/12 relative">
+                        
+                        <p>Yet to be launched.</p>
+                    </div>
+        
+                </div>
+
+                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+
+                    <div class="p-4 img-info">
+
+                        <img src="./images/coming.jpeg" alt="sap-course" width="400px" height="400px" class="rounded-2xl blur-md">
+        
+                        <h2 class="text-xl font-semibold text-black text-center pt-4">Coming Soon</h2>
+        
+                        <p class="text-gray-600">More details coming soon.</p>
+        
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">Know More</button>
+        
+                    </div>
+        
+                    <div class="hidden p-4 bg-black lg:w-11/12 relative">
+                        
+                        <p>Yet to be launched.</p>
+                    </div>
+        
+                </div>
+        
+                
+                <!-- Add more cards as needed -->
+        
+            </div>
+        
+            
+        
+            
+            
+        </div>
+
     </main>
 
   <script src="main.js"></script>

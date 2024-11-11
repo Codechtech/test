@@ -14,3 +14,30 @@ navLink.forEach(link => {
         hamburger.classList.toggle('ri-close-large-line')
     })
 })
+
+/*Product cards*/
+function toggleCard(card) {
+
+    const details = card.querySelector('div:last-child');
+
+    const allCards = document.querySelectorAll('.bg-white');
+
+    allCards.forEach(c => {
+
+        const detail = c.querySelector('div:last-child');
+
+        if (c !== card) {
+
+            detail.classList.add('hidden'); // Collapse other cards
+
+            c.classList.remove('expanded'); // Reset width of other cards
+
+        }
+
+    });
+
+    details.classList.toggle('hidden'); // Toggle the clicked card
+
+    card.classList.toggle('expanded'); // Toggle full width for the clicked card
+
+}
