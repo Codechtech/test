@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href="./output.css" rel="stylesheet">
   <title>CODECH || Tech Solutions</title>
 </head>
@@ -146,7 +147,7 @@
             <!--Cards-->
             <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-12">
 
-                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+                <div class="bg-white border flex md:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
 
                     <div class="p-4 img-info">
 
@@ -154,7 +155,7 @@
         
                         <h2 class="text-xl font-semibold text-black text-center pt-4">SAP ABAP</h2>
         
-                        <p class="text-gray-600">Gain in-demand SAP ABAP Programming skills and open doors to exciting career opportunities.</p>
+                        <p class="text-gray-600 text-center">Gain in-demand SAP ABAP Programming skills and open doors to exciting career opportunities.</p>
         
                         <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">Know More</button>
         
@@ -167,7 +168,7 @@
                             <li class="text-lg"><i class="ri-live-fill text-sky-500 font-bold"></i> <span class="text-sky-400 font-bold">Live, Interactive Sessions:</span>
                                 Daily 1-hour sessions, Monday to Friday for 3 months.</li>
                             <li class="text-lg"><i class="ri-code-box-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">Master Modern ABAP:</span>
-                                Learn the latest ABAP syntax and programming syntax.</li>
+                                Learn the latest ABAP programming syntax.</li>
                             <li class="text-lg"><i class="ri-server-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">SAP ABAP Server Access:</span>
                                 Practice on a dedicated SAP ABAP server (included in course fees).</li>
                             <li class="text-lg"><i class="ri-archive-stack-fill text-sky-400 font-bold"></i></i> <span class="text-sky-400 font-bold">Regular Mini Projects:</span>
@@ -176,6 +177,7 @@
                                 Culminate your learning with a comprehensive project</li>
                         </ul>
                         <p class="text-md pt-5 font-Rubik font-bold">Download the brochure.</p>
+                        <p class="text-black">For layout purpose</p>
                         <a href="./files/SAP ABAP course|| Codech.pdf" target="_blank" download="">
                             <button class="download-btn pixel-corners absolute right-5 bottom-5">
                                 <div class="button-content">
@@ -202,7 +204,7 @@
         
                 </div>
         
-                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+                <div class="bg-white border flex md:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
 
                     <div class="p-4 img-info">
 
@@ -223,7 +225,7 @@
         
                 </div>
 
-                <div class="bg-white border flex lg:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
+                <div class="bg-white border flex md:flex-row sm:flex-col border-gray-300 rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105" onclick="toggleCard(this)">
 
                     <div class="p-4 img-info">
 
@@ -255,8 +257,128 @@
             
         </div>
 
+        <!--Testimonials-->
+        <section id="testimonials" class="pt-10 bg-green-500">
+            <div class="flex flex-col items-center pb-5 gap-2 text-center">
+                <h2 class="font-bold text-gray-800 title">Testimonials</h2>
+                <p class="font-Poppins text-black">Their Journey, Their Success.</p>
+            </div>
+
+            <div class="container">
+                <div class="py-12 swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-800 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis aliquam accusamus adipisci praesentium, cupiditate deserunt molestias quam repellendus, sint sed deleniti veritatis corrupti a magnam recusandae asperiores, iure voluptatem.</p>
+                                <div class="flex items-center">
+                                    <img src="./images/testface_1.jpg" alt="face1" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Merilyn</p>
+                                        <p>Student</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-800 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis aliquam accusamus adipisci praesentium, cupiditate deserunt molestias quam repellendus, sint sed deleniti veritatis corrupti a magnam recusandae asperiores, iure voluptatem.</p>
+                                <div class="flex items-center">
+                                    <img src="./images/testface_2.jpg" alt="face1" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">John</p>
+                                        <p>IT Employee</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-800 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis aliquam accusamus adipisci praesentium, cupiditate deserunt molestias quam repellendus, sint sed deleniti veritatis corrupti a magnam recusandae asperiores, iure voluptatem.</p>
+                                <div class="flex items-center">
+                                    <img src="./images/testface_3.jpg" alt="face1" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Rose</p>
+                                        <p>MBA Graduate</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-  <script src="main.js"></script>
+    <footer class="bg-gray-900 text-white pt-10 pb-10 md:pt-10">
+        <div class="container mt-16 mb-10">
+            <div class="border-b border-yellow-500 relative">
+                <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+                    <div class="bg-gray-900 text-center space-x-2">
+                        <a href="https://www.facebook.com/share/ech5ikfmCbuTwVsM/" target="_blank"><i class="ri-facebook-fill hover:text-words-red duration-300 cursor-pointer text-2xl"></i></a>
+                        <a href="https://www.instagram.com/codech_tech_solutions?igsh=ZWV6YTRqY2dja3A1" target="_blank"><i class="ri-instagram-fill hover:text-words-red duration-300 cursor-pointer text-2xl"></i></a>
+                        <a href=""><i class="ri-linkedin-fill hover:text-words-red duration-300 cursor-pointer text-2xl"></i></a>
+                        <a><i class="ri-whatsapp-fill hover:text-words-red duration-300 cursor-pointer text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+            <div>
+                <div>
+                    <img src="./images/logo.svg" alt="" width="125px" height="125px">
+                </div>
+            </div>
+
+            <div>
+                <p class="mb-5 font-bold text-xl"> Quick Link
+                </p>
+                <div class="flex flex-col gap-1">
+                    <a href="#courses">Courses</a>
+                    <a href="./files/SAP ABAP course|| Codech.pdf" target="_blank">Brochure</a>
+                    <a href="#">Demo</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="mb-5 font-bold text-xl"> Popular Courses</p>
+                <div class="flex flex-col gap-1">
+                    <a href="#courses">SAP ABAP</a>
+                    <a href="#">Coming soon...</a>
+                    <a href="#">Coming soon...</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="mb-5 font-bold text-xl"> Contact Us</p>
+                <div class="flex flex-col gap-1">
+                    <a href ="tel:93914 69101">+91 93914 69101</a>
+                    <a href="mailto:contact.codechtech@gmail.com" target="_blank">contact.codechtech@gmail.com</a>
+                    <a href="#">Hyderabad</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 Codech Tech Solutions. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  
 </body>
 </html>
